@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador</title>
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Añadir Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container__left">
+            <h2 class="title_left">Welcome to CipherScribe: Encrypt & Decrypt Playground</h2>
+            <textarea placeholder="Drop your text here" id="inputText"></textarea>
+            <div class="buttons">
+                <button onclick="encryptText()"><i class="fas fa-lock"></i> Encrypt</button>
+                <button onclick="decryptText()"><i class="fas fa-unlock"></i> Decrypt</button>
+            </div>
+        </div>
+        <div class="container__right">
+            <h2>Result:</h2>
+            <textarea id="outputText" placeholder="Result..."></textarea>
+            <div class="button__copy">
+                <button onclick="copyText()"><i class="far fa-copy"></i> Copy</button>
+            </div>    
+        </div>
+    </div>
+    <script src="JScript/script.js"></script>
+</body>
+</html>
